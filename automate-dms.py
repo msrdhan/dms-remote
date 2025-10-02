@@ -9,7 +9,20 @@ df_input = pd.read_excel("input.xlsx")
 results = []
 
 # === KONFIGURASI SELENIUM ===
+
+
+brave_path = '/usr/bin/brave-browser'
+# Ganti ini dengan path ke profil Brave yang kamu gunakan sekarang (harus aktif Vimium-nya)
+# user_data_dir = r"C:\Users\<USERNAME>\AppData\Local\BraveSoftware\Brave-Browser\User Data"
+profile_dir = "Work"  # atau "Profile 1", tergantung profil aktif kamu
+
 options = webdriver.ChromeOptions()
+options.binary_location = brave_path
+# options.add_argument(f"user-data-dir={user_data_dir}")
+options.add_argument(f"profile-directory={profile_dir}")
+options.add_experimental_option("excludeSwitches", ["enable-automation"])
+options.add_experimental_option("useAutomationExtension", False)
+
 driver = webdriver.Chrome(options=options)
 driver.get("https://dms-siasn.bkn.go.id/")
 
