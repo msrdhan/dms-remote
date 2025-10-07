@@ -13,7 +13,7 @@ results = []
 
 brave_path = '/usr/bin/brave-browser'
 # Ganti ini dengan path ke profil Brave yang kamu gunakan sekarang (harus aktif Vimium-nya)
-# user_data_dir = r"C:\Users\<USERNAME>\AppData\Local\BraveSoftware\Brave-Browser\User Data"
+user_data_dir = "/home/r/.config/BraveSoftware/Brave-Browser"
 profile_dir = "Work"  # atau "Profile 1", tergantung profil aktif kamu
 
 options = webdriver.ChromeOptions()
@@ -67,7 +67,7 @@ try:
             # Klik tombol "Load Data"
             load_button = driver.find_element(By.XPATH, '//button[contains(text(), "Load Data")]')
             load_button.click()
-            time.sleep(3)
+            time.sleep(2)
 
             # Klik "Lanjut Verifikasi" atau "Verifikasi" jika ada
             try:
