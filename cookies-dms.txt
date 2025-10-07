@@ -1,0 +1,132 @@
+[
+  {
+    "name": "AUTH_SESSION_ID",
+    "value": "6609f778-8ce0-4356-8412-2a20deaa43df.node1",
+    "domain": "sso-siasn.bkn.go.id",
+    "path": "/auth/realms/public-siasn/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "AUTH_SESSION_ID_LEGACY",
+    "value": "6609f778-8ce0-4356-8412-2a20deaa43df.node1",
+    "domain": "sso-siasn.bkn.go.id",
+    "path": "/auth/realms/public-siasn/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "KEYCLOAK_IDENTITY",
+    "value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIyMDA0ZDBmMy1mNjI5LTRjYTQtYWZiMC1kNGRkYzhlMTU2ZjUifQ.eyJleHAiOjE3NTk4NjYzMzksImlhdCI6MTc1OTgyMzEzOSwianRpIjoiN2U2ODJhOGEtYTc4MS00MDM0LWEzOGUtZGQ0N2IwMWIzOTQ3IiwiaXNzIjoiaHR0cHM6Ly9zc28tc2lhc24uYmtuLmdvLmlkL2F1dGgvcmVhbG1zL3B1YmxpYy1zaWFzbiIsInN1YiI6IjJkY2YyYTcxLWVkYjctNDUwMC05NThiLTk2YjFhNTYyZmFhMyIsInR5cCI6IlNlcmlhbGl6ZWQtSUQiLCJzZXNzaW9uX3N0YXRlIjoiNjYwOWY3NzgtOGNlMC00MzU2LTg0MTItMmEyMGRlYWE0M2RmIiwic3RhdGVfY2hlY2tlciI6ImZ2WHlhd25OTDZkQUdPTncyOXNVbGlTM1puRWVPdEdwb2QyMXl5dExGUncifQ.1LLfLyWx7LyF4oeP0lOMac_L0P0oClhiwzmrwO7D8Sg",
+    "domain": "sso-siasn.bkn.go.id",
+    "path": "/auth/realms/public-siasn/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "KEYCLOAK_IDENTITY_LEGACY",
+    "value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIyMDA0ZDBmMy1mNjI5LTRjYTQtYWZiMC1kNGRkYzhlMTU2ZjUifQ.eyJleHAiOjE3NTk4NjYzMzksImlhdCI6MTc1OTgyMzEzOSwianRpIjoiN2U2ODJhOGEtYTc4MS00MDM0LWEzOGUtZGQ0N2IwMWIzOTQ3IiwiaXNzIjoiaHR0cHM6Ly9zc28tc2lhc24uYmtuLmdvLmlkL2F1dGgvcmVhbG1zL3B1YmxpYy1zaWFzbiIsInN1YiI6IjJkY2YyYTcxLWVkYjctNDUwMC05NThiLTk2YjFhNTYyZmFhMyIsInR5cCI6IlNlcmlhbGl6ZWQtSUQiLCJzZXNzaW9uX3N0YXRlIjoiNjYwOWY3NzgtOGNlMC00MzU2LTg0MTItMmEyMGRlYWE0M2RmIiwic3RhdGVfY2hlY2tlciI6ImZ2WHlhd25OTDZkQUdPTncyOXNVbGlTM1puRWVPdEdwb2QyMXl5dExGUncifQ.1LLfLyWx7LyF4oeP0lOMac_L0P0oClhiwzmrwO7D8Sg",
+    "domain": "sso-siasn.bkn.go.id",
+    "path": "/auth/realms/public-siasn/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "KEYCLOAK_SESSION",
+    "value": "public-siasn/2dcf2a71-edb7-4500-958b-96b1a562faa3/6609f778-8ce0-4356-8412-2a20deaa43df",
+    "domain": "sso-siasn.bkn.go.id",
+    "path": "/auth/realms/public-siasn/",
+    "expires": 1759866340.050732,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "KEYCLOAK_SESSION_LEGACY",
+    "value": "public-siasn/2dcf2a71-edb7-4500-958b-96b1a562faa3/6609f778-8ce0-4356-8412-2a20deaa43df",
+    "domain": "sso-siasn.bkn.go.id",
+    "path": "/auth/realms/public-siasn/",
+    "expires": 1759866340.050752,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "f1b20a94a8951fd5e448527fe603676c",
+    "value": "b8170b0c9ceedc73c0205dde175aa609",
+    "domain": "dms-siasn.bkn.go.id",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.1.1067973540.1759823132",
+    "domain": ".bkn.go.id",
+    "path": "/",
+    "expires": 1794383132.254564,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "BIGipServerpool_keycloak_siasn",
+    "value": "2953339914.36895.0000",
+    "domain": "sso-siasn.bkn.go.id",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "TOKEN",
+    "value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJBUWNPM0V3MVBmQV9MQ0FtY2J6YnRLUEhtcWhLS1dRbnZ1VDl0RUs3akc4In0.eyJleHAiOjE3NTk4NjYzMzksImlhdCI6MTc1OTgyMzE0MCwiYXV0aF90aW1lIjoxNzU5ODIzMTM5LCJqdGkiOiJmYTIwOWU2Zi03Y2JjLTRiOGYtYTc2NC1lYmNjYWMwMGM4MjIiLCJpc3MiOiJodHRwczovL3Nzby1zaWFzbi5ia24uZ28uaWQvYXV0aC9yZWFsbXMvcHVibGljLXNpYXNuIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjJkY2YyYTcxLWVkYjctNDUwMC05NThiLTk2YjFhNTYyZmFhMyIsInR5cCI6IkJlYXJlciIsImF6cCI6ImJrbi1kbXMiLCJub25jZSI6ImMwYTMzYTMwLWNiZWQtNDc2Yy1hNWViLWJiZWRlNzlhMzk2OSIsInNlc3Npb25fc3RhdGUiOiI2NjA5Zjc3OC04Y2UwLTQzNTYtODQxMi0yYTIwZGVhYTQzZGYiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vZG1zLXNpYXNuLXRyYWluaW5nLmJrbi5nby5pZCIsImh0dHBzOi8vZG1zLXNpYXNuLmJrbi5nby5pZC8qIiwiaHR0cHM6Ly9kbXMtc2lhc24tdHJhaW5pbmcuYmtuLmdvLmlkLyoiLCJodHRwOi8vbG9jYWxob3N0OjMwMDAvKiIsImh0dHBzOi8vZG1zLXNpYXNuLmJrbi5nby5pZCIsImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsicm9sZTpkYXNoYm9hcmQtb3BlcmFzaW9uYWw6YmtuLXB1c2F0LXBpbXBpbmFuIiwicm9sZTptYW5hamVtZW4td3M6ZGV2ZWxvcGVyIiwib2ZmbGluZV9hY2Nlc3MiLCJyb2xlOnN1cHBvcnQ6YWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIGVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJNLiBTWUFIUlVMIFJBTUFESEFOIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiMTk5NDAyMjQyMDE4MDExMDAxIiwiZ2l2ZW5fbmFtZSI6Ik0uIiwiZmFtaWx5X25hbWUiOiJTWUFIUlVMIFJBTUFESEFOIiwiZW1haWwiOiJtc3JkaGFuQGdtYWlsLmNvbSJ9.QJ8Hewk7iWAhvyacmQIOuLfjCyRF4ko929QTioV_2odp507iKWdOGTnFsfsHgQfVqNRmVq3pIgEOaj7ylmFGrRx3aHh5DEl_j2pIb4LhLEiVge-PWXymhuzRowKEf_l0_pk53LAYPW33n9czABDduvrWSJnUqjxoVmP5RVoJUqj3PzDyoiM_yS_MQKFUIifWBzGaVVVcBlPnMHXeYs5At6vZQsRaAKzOQcsfb3l6lXy2o2IfOtUzp7IZDIDLEteZ15GY_BYIWgRdmU2mO4p12BhofCr2e1-BwmU2R-ZQlHStux92ztPunrd68plUMDwEcgCLDuAtEZXneyTSdEJ54Q",
+    "domain": "dms-siasn.bkn.go.id",
+    "path": "/",
+    "expires": 1759830340,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "REFRESH_TOKEN",
+    "value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIyMDA0ZDBmMy1mNjI5LTRjYTQtYWZiMC1kNGRkYzhlMTU2ZjUifQ.eyJleHAiOjE3NTk4MjQ5NDAsImlhdCI6MTc1OTgyMzE0MCwianRpIjoiOThiOTBmZTMtMTUwOS00NDNmLWIwOWUtMjMxOWMyN2VkYjA0IiwiaXNzIjoiaHR0cHM6Ly9zc28tc2lhc24uYmtuLmdvLmlkL2F1dGgvcmVhbG1zL3B1YmxpYy1zaWFzbiIsImF1ZCI6Imh0dHBzOi8vc3NvLXNpYXNuLmJrbi5nby5pZC9hdXRoL3JlYWxtcy9wdWJsaWMtc2lhc24iLCJzdWIiOiIyZGNmMmE3MS1lZGI3LTQ1MDAtOTU4Yi05NmIxYTU2MmZhYTMiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoiYmtuLWRtcyIsIm5vbmNlIjoiYzBhMzNhMzAtY2JlZC00NzZjLWE1ZWItYmJlZGU3OWEzOTY5Iiwic2Vzc2lvbl9zdGF0ZSI6IjY2MDlmNzc4LThjZTAtNDM1Ni04NDEyLTJhMjBkZWFhNDNkZiIsInNjb3BlIjoib3BlbmlkIGVtYWlsIHByb2ZpbGUifQ.Uyc-uZy5ssSiBWtA6n1cvii_xB5qmvZukDA36dAQWow",
+    "domain": "dms-siasn.bkn.go.id",
+    "path": "/",
+    "expires": 1759830340,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "ROLE_USER",
+    "value": "[\"verifikasi\"]",
+    "domain": "dms-siasn.bkn.go.id",
+    "path": "/",
+    "expires": 1759824940,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga_Q6G5G1YM8D",
+    "value": "GS2.1.s1759823132$o1$g1$t1759823141$j51$l0$h0",
+    "domain": ".bkn.go.id",
+    "path": "/",
+    "expires": 1794383141.238714,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  }
+]
