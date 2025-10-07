@@ -17,8 +17,8 @@ def load_cookies(context, cookies_path):
     print(f"🍪 {len(cookies)} cookies dimuat dari {cookies_path}")
 
 with sync_playwright() as p:
-    browser = p.chromium.launch(headless=False, slow_mo=100)
-    context = browser.new_context()
+    browser = p.chromium.launch(headless=False, slow_mo=100, args=["--start-maximized"])
+    context = browser.new_context(no_viewport=True)
 
     # === LOAD COOKIES DARI FILE ===
     if Path(COOKIES_FILE).exists():
