@@ -44,6 +44,9 @@ with sync_playwright() as p:
     try:
         index = 0
         while index < len(df_input):
+            page = context.new_page()
+            page.bring_to_front()
+            page.goto("https://dms-siasn.bkn.go.id/", wait_until="networkidle")
             nip = str(df_input.iloc[index]["nip"]).strip()
             print(f"\n🔍 Memproses NIP [baris {index + 1}]: {nip}")
 
