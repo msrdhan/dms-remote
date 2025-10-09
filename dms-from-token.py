@@ -44,9 +44,6 @@ with sync_playwright() as p:
     try:
         index = 0
         while index < len(df_input):
-            page = context.new_page()
-            page.bring_to_front()
-            page.goto("https://dms-siasn.bkn.go.id/", wait_until="networkidle")
             nip = str(df_input.iloc[index]["nip"]).strip()
             print(f"\n🔍 Memproses NIP [baris {index + 1}]: {nip}")
 
@@ -54,12 +51,12 @@ with sync_playwright() as p:
             try:
                 # Isi NIP
                 page.fill('input[placeholder="Masukan Nomor Induk Pegawai"]', nip)
-                time.sleep(1)
+                # time.sleep(1)
 
                 # Klik tombol "Load Data"
                 page.click('button:has-text("Load Data")')
                 page.wait_for_load_state("networkidle")
-                time.sleep(2)
+                # time.sleep(2)
 
                 # Klik tombol verifikasi
                 try:
@@ -67,7 +64,7 @@ with sync_playwright() as p:
                     if not verif_btn.is_visible():
                         verif_btn = page.locator('button[data="Verifikasi"]')
                     verif_btn.click()
-                    time.sleep(2)
+                    # time.sleep(2)
 
                     # Ambil nama ASN
                     try:
