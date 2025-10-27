@@ -38,17 +38,42 @@ def save_to_excel(headers, rows):
     except Exception as e:
         print(f"[ERROR] Gagal simpan ke Excel: {e}")
 
+def get_instansi(page):
+    """Ambil nama instansi dari elemen span.truncate.mr-2."""
+    try:
+        el = page.locator("span.truncate.mr-2")
+        if el.count() > 0:
+            text = el.first.inner_text().strip()
+            print(f"[INFO] Instansi terdeteksi: {text}")
+            return text
+        else:
+            print("[WARN] Elemen instansi tidak ditemukan.")
+            return "-"
+    except Exception as e:
+        print(f"[WARN] Gagal ambil instansi: {e}")
+        return "-"
+
 
 def extract_table(page):
     try:
+        instansi = get_instansi(page)  # <--- Tambahan ini
         headers = page.locator("table thead th").all_inner_texts()
         rows_elements = page.locator("table tbody tr").all()
         rows = []
 
+        if headers and "Instansi" not in headers:
+            headers.append("Instansi")
+
         for row_el in rows_elements:
             cells = row_el.locator("td").all_inner_texts()
+            cells = cells + [instansi]  
             if any(cells):
                 rows.append(cells)
+        
+        
+
+        if not rows:
+            print("[INFO] Tidak ada data valid di halaman ini (kosong).")
 
         return headers, rows
     except Exception as e:
@@ -94,11 +119,16 @@ def mode_manual(page):
             break
 
         try:
+            if page.locator("text=Memuat data").is_visible():
+                print("[INFO] Halaman masih loading, skip sementara...")
+                continue
+
             headers, rows = extract_table(page)
             if not rows:
                 print("[INFO] Tidak ada data di halaman ini.")
             else:
                 save_to_excel(headers, rows)
+
 
             next_btn = page.locator("button:has-text('Next')")
             next_btn.click()
