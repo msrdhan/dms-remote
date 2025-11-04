@@ -5,6 +5,7 @@ from PyPDF2 import PdfMerger
 from pdf2image import convert_from_path
 from PIL import Image
 import pytesseract
+from natsort import natsorted  # pip install natsort
 
 # === CONFIG ===
 workdir = Path(".")
@@ -102,7 +103,7 @@ def compress_pdf(input_pdf: Path, output_pdf: Path, quality: str = "screen"):
 leaf_dirs = [d for d in input_dir.rglob("*") if d.is_dir() and is_leaf_dir(d)]
 
 for d in leaf_dirs:
-    pdf_files = sorted(d.glob("*.pdf"), key=lambda p: p.name.lower())
+    pdf_files = natsorted(d.glob("*.pdf"), key=lambda p: p.name.lower())
     if not pdf_files:
         continue
 

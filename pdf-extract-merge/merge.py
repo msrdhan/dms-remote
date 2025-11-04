@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from PyPDF2 import PdfMerger
+from natsort import natsorted  # pip install natsort
 
 # Set working directory
 workdir = Path(".")
@@ -18,7 +19,7 @@ def is_leaf_dir(directory: Path) -> bool:
 leaf_dirs = [d for d in input_dir.rglob("*") if d.is_dir() and is_leaf_dir(d)]
 
 for d in leaf_dirs:
-    pdf_files = sorted(d.glob("*.pdf"), key=lambda p: p.name.lower())
+    pdf_files = natsorted(d.glob("*.pdf"), key=lambda p: p.name.lower())
     if not pdf_files:
         continue
 
